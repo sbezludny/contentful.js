@@ -3,18 +3,20 @@ import test from 'blue-tape'
 import * as contentful from '../../lib/contentful'
 
 const params = {
-  accessToken: 'b4c0n73n7fu1',
-  space: 'cfexampleapi'
+  host: 'cdn.flinkly.com',
+  accessToken: '6cc7741d3fffa5c64a5f3443eeb1aeef5cc16e754fa01c9c62992e9571e3b95a',
+  space: 'hxht27z7bibu'
 }
 const localeSpaceParams = {
-  accessToken: 'da1dc0e316213fe11e6139d3cd02f853b12da3f3fd0b4f146a1613a9cca277cd',
-  space: '7dh3w86is8ls'
+  host: 'cdn.flinkly.com',
+  accessToken: '6cc7741d3fffa5c64a5f3443eeb1aeef5cc16e754fa01c9c62992e9571e3b95a',
+  space: 'hxht27z7bibu'
 }
 
 const previewParams = {
-  host: 'preview.contentful.com',
-  accessToken: 'e5e8d4c5c122cf28fc1af3ff77d28bef78a3952957f15067bbc29f2f0dde0b50',
-  space: 'cfexampleapi'
+  host: 'preview.flinkly.com',
+  accessToken: '70597e2c9fa20702884bbdeb58b89630b16358ab5cb059d52d9d69923ea47ac7',
+  space: 'hxht27z7bibu'
 }
 
 if (process.env.API_INTEGRATION_TESTS) {
