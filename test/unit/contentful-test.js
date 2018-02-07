@@ -20,7 +20,7 @@ test('Generate the correct User Agent Header', (t) => {
   createClientRewireApi.__Rewire__('@contentful/axios', sinon.stub)
   const createHttpClientStub = sinon.stub().returns({
     defaults: {
-      baseURL: 'http://some-base-url.com'
+      baseURL: 'http://some-base-url.com/'
     }
   })
   const rateLimitStub = sinon.stub()
@@ -86,7 +86,7 @@ test('Returns a client instance', (t) => {
 test('Initializes API with link resolution turned on by default', (t) => {
   const createHttpClientStub = sinon.stub().returns({
     defaults: {
-      baseURL: 'http://some-base-url.com'
+      baseURL: 'http://some-base-url.com/'
     }
   })
   const rateLimitStub = sinon.stub()
@@ -105,7 +105,7 @@ test('Initializes API with link resolution turned on by default', (t) => {
 test('Initializes API with link resolution turned on explicitly', (t) => {
   const createHttpClientStub = sinon.stub().returns({
     defaults: {
-      baseURL: 'http://some-base-url.com'
+      baseURL: 'http://some-base-url.com/'
     }
   })
   const rateLimitStub = sinon.stub()
@@ -142,7 +142,7 @@ test('Initializes API with link resolution turned off explicitly', (t) => {
 test('Initializes API and attaches default environment', (t) => {
   const createHttpClientStub = sinon.stub().returns({
     defaults: {
-      baseURL: 'http://some-base-url.com'
+      baseURL: 'http://some-base-url.com/'
     }
   })
   const rateLimitStub = sinon.stub()
@@ -160,7 +160,7 @@ test('Initializes API and attaches default environment', (t) => {
 test('Initializes API and attaches custom environment', (t) => {
   const createHttpClientStub = sinon.stub().returns({
     defaults: {
-      baseURL: 'http://some-base-url.com'
+      baseURL: 'http://some-base-url.com/'
     }
   })
   const rateLimitStub = sinon.stub()
