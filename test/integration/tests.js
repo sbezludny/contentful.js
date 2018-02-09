@@ -75,7 +75,7 @@ test('Gets an entry with a specific locale', (t) => {
     })
 })
 
-test('Get entry with fallback locale', (t) => {
+test.skip('Get entry with fallback locale', (t) => {
   t.plan(5)
   Promise.all([
     localeClient.getEntry('no-af-and-no-zu-za', {locale: 'af'}),
