@@ -62,7 +62,7 @@
     "contentful-resolve-response": "^1.1.4",
     "contentful-sdk-core": "^5.0.3",
     "json-stringify-safe": "^5.0.1",
-    "lodash": "^4.17.4"
+    "lodash": "^4.17.5"
   },
   "devDependencies": {
     "babel-cli": "^6.7.5",
@@ -81,7 +81,7 @@
     "core-js": "^2.5.1",
     "coveralls": "^2.11.9",
     "cz-conventional-changelog": "^2.0.0",
-    "eslint": "^4.2.0",
+    "eslint": "^4.18.1",
     "eslint-config-standard": "^10.2.1",
     "eslint-plugin-import": "^2.7.0",
     "eslint-plugin-node": "^5.1.0",
@@ -97,11 +97,11 @@
     "karma-chrome-launcher": "^2.0.0",
     "karma-firefox-launcher": "^1.0.1",
     "karma-sauce-launcher": "^1.1.0",
-    "karma-tap": "^3.1.1",
+    "karma-tap": "^3.2.1",
     "karma-webpack": "^2.0.2",
     "lodash-webpack-plugin": "^0.11.4",
     "mkdirp": "^0.5.1",
-    "nodemon": "^1.11.0",
+    "nodemon": "^1.15.1",
     "require-all": "^2.2.0",
     "rimraf": "^2.6.0",
     "selenium-webdriver": "^3.5.0",
@@ -109,8 +109,8 @@
     "sinon": "^2.0.0-pre",
     "tap-spec": "^4.1.1",
     "trevor": "^2.2.0",
-    "webpack": "^3.3.0",
-    "webpack-bundle-analyzer": "^2.8.3"
+    "webpack": "^3.11.0",
+    "webpack-bundle-analyzer": "^2.10.0"
   },
   "engines": {
     "node": ">=4.7.2"

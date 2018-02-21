@@ -3,20 +3,18 @@ import test from 'blue-tape'
 import * as contentful from '../../lib/contentful'
 
 const params = {
-  host: 'cdn.flinkly.com',
-  accessToken: '6cc7741d3fffa5c64a5f3443eeb1aeef5cc16e754fa01c9c62992e9571e3b95a',
-  space: 'hxht27z7bibu'
+  accessToken: 'b4c0n73n7fu1',
+  space: 'cfexampleapi'
 }
 const localeSpaceParams = {
-  host: 'cdn.flinkly.com',
-  accessToken: '6cc7741d3fffa5c64a5f3443eeb1aeef5cc16e754fa01c9c62992e9571e3b95a',
-  space: 'hxht27z7bibu'
+  accessToken: 'da1dc0e316213fe11e6139d3cd02f853b12da3f3fd0b4f146a1613a9cca277cd',
+  space: '7dh3w86is8ls'
 }
 
 const previewParams = {
-  host: 'preview.flinkly.com',
-  accessToken: '70597e2c9fa20702884bbdeb58b89630b16358ab5cb059d52d9d69923ea47ac7',
-  space: 'hxht27z7bibu'
+  host: 'preview.contentful.com',
+  accessToken: 'e5e8d4c5c122cf28fc1af3ff77d28bef78a3952957f15067bbc29f2f0dde0b50',
+  space: 'cfexampleapi'
 }
 
 if (process.env.API_INTEGRATION_TESTS) {
@@ -75,7 +73,7 @@ test('Gets an entry with a specific locale', (t) => {
     })
 })
 
-test.skip('Get entry with fallback locale', (t) => {
+test('Get entry with fallback locale', (t) => {
   t.plan(5)
   Promise.all([
     localeClient.getEntry('no-af-and-no-zu-za', {locale: 'af'}),
@@ -404,7 +402,14 @@ test('Gets assets', (t) => {
       t.ok(response.items, 'items')
     })
 })
-
+test('Gets Locales', (t) => {
+  t.plan(2)
+  return client.getLocales()
+    .then((response) => {
+      t.ok(response.items, 'items')
+      t.equals(response.items[0].code, 'en-US', 'first locale is en-US')
+    })
+})
 test('Sync space', (t) => {
   t.plan(6)
   return client.sync({initial: true})
